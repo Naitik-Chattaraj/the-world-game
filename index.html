@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>THE WORLD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>THE WORLD</h1>
+
+    <div id="map-container">
+      <div id="map-wrapper">
+        <object id="world-map" type="image/svg+xml" data="./assets/maps/world.svg"></object>
+      </div>
+    </div>
+
+    <!-- Country info side panel -->
+    <div id="country-panel" class="hidden">
+      <button id="close-panel">✖</button>
+      <h2 id="country-name">Country Name</h2>
+      <p><strong>Population:</strong> <span id="country-pop"></span></p>
+      <p><strong>GDP:</strong> <span id="country-gdp"></span></p>
+      <p><strong>Military:</strong> <span id="country-mil"></span></p>
+      <p><strong>Resources:</strong> <span id="country-res"></span></p>
+    </div>
+
+    <!-- Removed the old "country-info" div, since it's replaced by the panel -->
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
